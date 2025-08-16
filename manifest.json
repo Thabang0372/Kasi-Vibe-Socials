@@ -1,10 +1,11 @@
+
 {
   "name": "Kasi Vibe Socials 0372",
   "short_name": "KasiVibe",
-  "start_url": ".",
+  "start_url": "./index.html",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#007AFF",
+  "theme_color": "#ff6600",
   "icons": [
     {
       "src": "default-avatar.png",
