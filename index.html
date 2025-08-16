@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kasi Vibe Socials 0372®</title>
+<link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.json">
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-storage-compat.js"></script>
+</head>
+<body>
+<div id="app">
+
+  <!-- Login / Signup -->
+  <div id="auth-container" class="screen">
+    <h1>Kasi Vibe Socials 0372®</h1>
+    <input type="email" id="email" placeholder="Email">
+    <input type="password" id="password" placeholder="Password">
+    <button id="signup-btn">Sign Up</button>
+    <button id="login-btn">Log In</button>
+    <p id="auth-msg"></p>
+  </div>
+
+  <!-- Main App -->
+  <div id="main-container" class="screen hidden">
+    
+    <!-- Top Nav -->
+    <nav>
+      <h2>Kasi Vibe</h2>
+      <button id="logout-btn">Logout</button>
+    </nav>
+
+    <!-- User Profile -->
+    <section id="profile-section">
+      <img id="profile-pic" src="default-avatar.png" alt="Profile Pic">
+      <input type="text" id="display-name" placeholder="Display Name">
+      <textarea id="bio" placeholder="Bio"></textarea>
+      <button id="update-profile-btn">Update Profile</button>
+    </section>
+
+    <!-- VibeBoard Feed -->
+    <section id="feed-section">
+      <h3>VibeBoard</h3>
+      <div id="post-input">
+        <textarea id="post-text" placeholder="What's on your mind?"></textarea>
+        <input type="file" id="post-media">
+        <button id="post-btn">Post</button>
+      </div>
+      <div id="feed"></div>
+    </section>
+
+    <!-- QuickVibes Stories -->
+    <section id="stories-section">
+      <h3>QuickVibes</h3>
+      <div id="stories"></div>
+    </section>
+
+    <!-- Real-Time Chat -->
+    <section id="chat-section">
+      <h3>KasiChat</h3>
+      <div id="chat-list"></div>
+      <input type="text" id="chat-input" placeholder="Type a message...">
+      <button id="send-chat-btn">Send</button>
+    </section>
+
+    <!-- Notifications -->
+    <section id="notifications-section">
+      <h3>Notifications</h3>
+      <ul id="notifications-list"></ul>
+    </section>
+
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
