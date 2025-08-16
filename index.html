@@ -1,37 +1,38 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kasi Vibe Socials 0372®</title>
-  <link rel="stylesheet" href="style.css">
-  <!-- Firebase -->
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-auth-compat.js"></script>
-  <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-database-compat.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kasi Vibe Socials 0372®</title>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="auth-container">
-    <h1>🌍🔥 Kasi Vibe Socials 0372®</h1>
-    <p>Where the World Vibe Starts</p>
-    <input type="email" id="email" placeholder="Email">
-    <div class="password-container">
-      <input type="password" id="password" placeholder="Password">
-      <button id="toggle-password">Show</button>
-    </div>
-    <button id="login-btn">Sign In</button>
-    <button id="signup-btn">Create Account</button>
-    <p id="auth-msg"></p>
-    <p>© 2025 Kasi Vibe Socials 0372® – All rights reserved.<br>Created by: Thabang Agondo<br>Kasi Vibe Foundation and Projects NPC</p>
+<div id="pre-login">
+  <h1>Where the World Vibe Starts 🌍🔥</h1>
+  <p>© 2025 Kasi Vibe Socials 0372® – Created by Thabang Agondo</p>
+  <input type="email" id="email" placeholder="Email">
+  <input type="password" id="password" placeholder="Password">
+  <button id="togglePassword">Show/Hide</button>
+  <button id="signInBtn">Sign In</button>
+  <button id="createAccountBtn">Create Account</button>
+</div>
+<div id="post-login" style="display:none;">
+  <nav>
+    <span id="feedIcon">📱 Feed</span>
+    <span id="profileIcon">👤 Profile</span>
+    <button id="logoutBtn">Logout</button>
+  </nav>
+  <div id="mainContent">
+    <p>Welcome to Kasi Vibe Socials 0372®!</p>
+    <div id="feed"></div>
+    <div id="chat"></div>
   </div>
-
-  <div id="main-container" class="hidden">
-    <h2>Welcome to Kasi Vibe!</h2>
-    <img src="user-icon.png" alt="User Icon" id="user-icon">
-    <button id="logout-btn">Logout</button>
-  </div>
-
-  <script src="firebaseConfig.js"></script>
-  <script src="app.js"></script>
+</div>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js"></script>
+<script src="firebaseConfig.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
